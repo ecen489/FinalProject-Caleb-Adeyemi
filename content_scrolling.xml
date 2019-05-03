@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".ScrollingActivity"
+    tools:showIn="@layout/activity_scrolling">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="200sp"
+            android:background="@android:color/background_light"
+            android:cropToPadding="false"
+            app:srcCompat="@drawable/bestbuys2" />
+
+        <ImageButton
+            android:id="@+id/computer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true"
+            android:layout_gravity="center_horizontal"
+            android:onClick="categoryClick"
+            android:background="@android:color/background_light"
+            app:srcCompat="@drawable/computers" />
+
+        <ImageButton
+            android:id="@+id/cellphones"
+            android:layout_width="match_parent"
+            android:layout_height="80sp"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center_horizontal"
+            android:adjustViewBounds="true"
+            android:background="@android:color/background_light"
+            android:onClick="categoryClick"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/cellphones" />
+
+        <ImageButton
+            android:id="@+id/tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true"
+            android:layout_gravity="center_horizontal"
+            android:onClick="categoryClick"
+            android:background="@android:color/background_light"
+            app:srcCompat="@drawable/tv" />
+
+        <ImageButton
+            android:id="@+id/cameras"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true"
+            android:onClick="categoryClick"
+            android:layout_gravity="center_horizontal"
+            android:background="@android:color/background_light"
+            app:srcCompat="@drawable/cameras" />
+
+
+        <ImageButton
+            android:id="@+id/movies"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center_horizontal"
+            android:onClick="categoryClick"
+            android:background="@android:color/background_light"
+            app:srcCompat="@drawable/movies" />
+
+
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>
